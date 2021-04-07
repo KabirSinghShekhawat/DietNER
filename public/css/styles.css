@@ -1,11 +1,10 @@
 * { box-sizing: border-box; }
 
 body {
-    font-size: 16px;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
-    /* position: relative; */
+    font-family: 'Lucida Sans Unicode';
 }
 
 form {
@@ -15,13 +14,11 @@ form {
     /* alignments */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: flex-start; */
     /* typography */
     background-color: rgb(119, 119, 119);
     margin: 4rem auto;
     padding: 2rem 3rem 0 3rem;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
 }
 
 form label, form input {
@@ -31,42 +28,40 @@ form label {
     font-size: 1.4rem;
     color: white;
     font-weight: 900;
-    font-family: 'Lucida Sans Unicode';
     padding: 0 0.2rem;
 }
 input[type="text"] {
     margin-top: 3rem;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
     border: none;
 }
 
 button {
     margin: 3rem 0;
-    font-size: 1.2rem;
-    padding: 1rem 3rem;
-    letter-spacing: 0.2rem;
+    font-size: calc(1rem + 0.75vw);
+    padding: 1rem;
+    max-width: calc(10rem + 0.75vw);
     font-weight: 900;
     border: none;
     background-color: rgb(0, 183, 255);
     color: white;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
 }
 
 button:hover {
     cursor: pointer;
     background-color: rgb(78, 181, 221);
     color: rgb(255, 255, 255);
-    /* transition: background color 1s; */
 }
 
 footer {
     width: 100%;
-    min-height: 10vh;
     font-size: 1.4rem;
     text-align: center;
     background-color: black;
     color: white;
+    min-height: 10vh;
     position: absolute;
     bottom: 0;
     left: 0;
