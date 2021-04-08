@@ -1,13 +1,51 @@
-* { box-sizing: border-box; }
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
 
 body {
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Lucida Sans Unicode';
 }
 
-form {
+a {
+    text-decoration: none;
+}
+
+button:hover, a:hover {
+    cursor: pointer;
+}
+
+.new-user {
+    width: 100%;
+    background-color: black;
+    padding: 1rem;
+}
+
+.new-user > a {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: royalblue;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.new-user > a:active {
+    box-shadow: 2px 2px 1px rgb(197, 197, 235);
+}
+
+btn-click-shadow:active {
+    box-shadow: 2px 2px 1px rgb(197, 197, 235);
+}
+
+form label, form input {
+    display: block;
+}
+
+.food-text-form {
     /* size */
     width: 90%;
     max-width: 1000px;
@@ -21,26 +59,32 @@ form {
     border-radius: 0.2rem;
 }
 
-form label, form input {
-    display: block;
+@media screen and (max-width: 768px) {
+    .food-text-form {
+        width: 95%;
+        padding: 1rem 0.2rem 0 0.2rem;
+    }
 }
-form label {
+
+.food-text-form label {
     font-size: 1.4rem;
     color: white;
     font-weight: 900;
     padding: 0 0.2rem;
 }
-input[type="text"] {
-    margin-top: 3rem;
+
+.food-text-form input[type="text"] {
+    margin: 2rem 0;
     padding: 1rem;
     border-radius: 0.2rem;
     border: none;
 }
 
-button {
+.diet-form-submit-btn {
     margin: 3rem 0;
     font-size: calc(1rem + 0.75vw);
     padding: 1rem;
+    width: auto;
     max-width: calc(10rem + 0.75vw);
     font-weight: 900;
     border: none;
@@ -48,9 +92,14 @@ button {
     color: white;
     border-radius: 0.2rem;
 }
-
-button:hover {
-    cursor: pointer;
+@media screen and (max-width: 767px) {
+    .diet-form-submit-btn {
+        width: 100%;
+        max-width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+.diet-form-submit-btn:hover {
     background-color: rgb(78, 181, 221);
     color: rgb(255, 255, 255);
 }
@@ -59,10 +108,9 @@ footer {
     width: 100%;
     font-size: 1.4rem;
     text-align: center;
+    padding: 2rem 0;
     background-color: black;
     color: white;
     min-height: 10vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-top: auto;
 }
