@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>NER</title>
-</head>
+<%- include('./partials/header') %>
+
 <body>
-    <a target="_blank" href="/user">New User</a>
-    <form action="/diet" method="POST">
+    <div class="new-user">
+        <a href="/user">New User</a>
+    </div>
+
+    <form action="/diet" method="POST" class="food-text-form">
         <label for="name">Enter name:</label>
         <input type="text" id="name" name="name" placeholder="Enter Name">
         <label for="food-text">Enter Food Info</label>
         <input type="text" id="food-text" name="foodText" placeholder="Enter Food info">
-        <button type="submit">Submit</button>
-    </form>
-    <footer>
-        <p>
-            Named Entity Recognition
-        </p>
-    </footer>
-</body>
-</html>
+        <button type="submit" class="diet-form-submit-btn btn-click-shadow">Submit</button>
+    </form>    
+    
+<%- include('./partials/footer') %>

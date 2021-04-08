@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>New User</title>
-</head>
+<%- include('./partials/header') %>
+
 <body>
-    <a target="_blank" href="/newUser">New User</a>
-    <form action="/user" method="POST">
+    <div class="new-user"><a href="/">Home</a></div>
+    <form action="/user" method="POST" class="food-text-form">
         <label for="name">Enter name:</label>
         <input type="text" id="name" name="name" placeholder="Enter Name">
-        <button type="submit">Submit</button>
+        <button type="submit" class="diet-form-submit-btn btn-click-shadow">Submit</button>
     </form>
-    <footer>
-        <p>
-            Named Entity Recognition
-        </p>
-    </footer>
-</body>
-</html>
+
+    <%- include('./partials/footer') %>
