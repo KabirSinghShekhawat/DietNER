@@ -6,6 +6,7 @@ const path = require('path')
 const homeRoute = require('./routes/home')
 const userRoute = require('./routes/user')
 const dietRoute = require('./routes/diet')
+const apiRoute = require('./routes/api')
 
 db.connectDatabase();
 
@@ -22,5 +23,6 @@ app.use(express.json({ limit: '10kb'}))
 app.use('/', homeRoute)
 app.use('/user', userRoute)
 app.use('/diet', dietRoute)
+app.use('/api', apiRoute)
 
 module.exports = app
