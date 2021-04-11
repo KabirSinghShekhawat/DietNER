@@ -10,10 +10,15 @@ exports.addFood = async (req, res) => {
     const user = await User.findOne({ name: name})
     if(emptyText(user))
         return res.status(404).send('<h1>User Not Found</h1>')
-    const foodItem = await NER.nerParser(foodText)
-    user.diet.push(dietFactory(foodItem.Name, foodItem.calories))
+
+    const foodItems = await NER.nerParser(foodText)
+
+    for(let foodItem of foodItems) {
+        user.diet.push(dietFactory(foodItem.foodName, foodItem.calories))
+    }
+
     await user.save()
-    return res.status(201).redirect('/')
+    return res.status(201).send(foodItems)
 }
 
 function emptyText(input) {
