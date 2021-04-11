@@ -1,16 +1,20 @@
 <%- include('./partials/header') %>
-
 <body>
-    <div class="new-user">
-        <a href="/user">New User</a>
-    </div>
+    <%- include('./partials/nav') %>
 
-    <form action="/diet" method="POST" class="food-text-form">
-        <label for="name">Enter name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter Name">
-        <label for="food-text">Enter Food Info</label>
-        <input type="text" id="food-text" name="foodText" placeholder="Enter Food info">
-        <button type="submit" class="diet-form-submit-btn btn-click-shadow">Submit</button>
-    </form>    
-    
-<%- include('./partials/footer') %>
+    <div class="container my-5">
+        <form action="/diet" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">User's Name: </label>
+              <input type="text" class="form-control" id="name" name="name" aria-describedby="name">
+              <div id="nameHelp" class="form-text">Please enter your name to register.</div>
+            </div>
+            <div class="mb-3">
+                <label for="food-text" class="form-label">Enter Food Info</label>
+                <textarea class="form-control" id="food-text" name="foodText" rows="3"></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+   
+    <%- include('./partials/footer') %>

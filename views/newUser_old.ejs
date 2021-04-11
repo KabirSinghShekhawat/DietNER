@@ -1,0 +1,11 @@
+<%- include('./partials/header') %>
+
+<body>
+    <div class="new-user"><a href="/">Home</a></div>
+    <form action="/user" method="POST" class="food-text-form">
+        <label for="name">Enter name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name">
+        <button type="submit" class="diet-form-submit-btn btn-click-shadow">Submit</button>
+    </form>
+
+    <%- include('./partials/footer') %>
