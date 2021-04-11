@@ -6,4 +6,7 @@ router.route('/')
 .get(userController.newUser)
 .post(userController.addUser)
 
+router.route('/all')
+.get(userController.userList)
+
 module.exports = router

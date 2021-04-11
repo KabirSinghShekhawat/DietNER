@@ -13,6 +13,12 @@ exports.addUser = async (req, res) => {
     return res.status(201).redirect('/')
 }
 
+exports.userList = async (req, res) => {
+    const users = await User.find({})
+    console.log('number of users: ' + users.length)
+    console.log(users)
+    return res.render('users', {users})
+}
 
 function emptyText(input) {
     if(typeof input == 'undefined' || input == null)

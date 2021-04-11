@@ -1,6 +1,18 @@
 <%- include('./partials/header') %>
 <body>
     <%- include('./partials/nav') %>
+    <% for (let user of users) { %>
+        <div class="container">
+            <p class="mb-3">Name: <%- user.name %></p>
+            <div class="container">
+                <h3>Diet List</h3>
+                <% for (let food of user.diet) { %>
+                    <p class="mb-3">Food Name: <%- food.foodName %></p>
+                    <p class="mb-3">Calories: <%- food.calories %></p>
+                <% } %>
+            </div>
+        </div>
+    <% } %>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
