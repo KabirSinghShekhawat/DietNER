@@ -11,11 +11,13 @@ const fs = require('fs')
 const Food = require('../models/food')
 
 exports.nerParser = async (foodText) => {
-    const csvData = await readData('public/data/ner_dataset.csv')
+    const stream = await readCSVFile(path.join(__dirname, '../public/data/ner_dataset.csv'))
+    const csvData = await readData(stream)
     const trainingData = []
+    // console.log(csvData)
 
+    console.log(csvData.length)
     for (let item of csvData) {
-        console.log(item)
         trainingData.push(NER_Factory(item))
     }
 
@@ -30,6 +32,14 @@ exports.nerParser = async (foodText) => {
     return await cleanTokens(tokens)
 }
 
+async function readCSVFile(filename) {
+    const readStream = fs.createReadStream(filename, {encoding: 'utf8'})
+    let fullStream = ''
+    for await (const chunk of readStream) {
+        fullStream += chunk
+    }
+    return fullStream
+}
 // let name = 'public/data/ner_dataset.csv'
 // exports.nerParser = (foodText) => {
 //     const trainingData = []
