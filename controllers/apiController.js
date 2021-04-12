@@ -14,7 +14,7 @@ exports.addFood = async (req, res) => {
     const foodItems = await NER.nerParser(foodText)
 
     for(let foodItem of foodItems) {
-        user.diet.push(dietFactory(foodItem.foodName, foodItem.calories))
+        user.diet.push(dietFactory(foodItem))
     }
 
     await user.save()
@@ -27,10 +27,13 @@ function emptyText(input) {
     return false
 }
 
-function dietFactory(name, calories) {
+function dietFactory(food) {
     return {
-        foodName: name, 
-        calories: calories,
+        foodName: food.foodName, 
+        calories: food.calories,
+        protein: food.protein,
+        fat: food.fat,
+        carbohydrates: food.carbohydrates,
         createdAt: new Date().toLocaleString()
     }
 }

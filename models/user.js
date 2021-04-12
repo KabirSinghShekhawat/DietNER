@@ -15,6 +15,18 @@ const userSchema = new mongoose.Schema({
                 type: Number,
                 default: 0.00
             },
+            protien: {
+                type: Number,
+                default: 0.00
+            },
+            fat: {
+                type: Number,
+                default: 0.00
+            },
+            carbohydrates: {
+                type: Number,
+                default: 0.00
+            },
             createdAt: {
                 type: Date,
                 default: Date.now
