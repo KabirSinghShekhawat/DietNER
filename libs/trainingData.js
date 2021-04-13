@@ -18,6 +18,7 @@ exports.nerParser = async (foodText) => {
     for (let item of csvData) {
         trainingData.push(NER_Factory(item))
     }
+    
     let tokens = NER_learn(trainingData, foodText)
     tokens = myNER.recognize(tokens)
     console.log(tokens)
@@ -49,7 +50,7 @@ async function cleanTokens(tokens) {
     let finalFoodList = []
 
     for (let food of foodNames) {
-        console.log(`Expected Entity: ${food}`)
+        console.log(`Expected Entity: ${JSON.stringify(food)}`)
     }
 
     for (let food of foodNames) {

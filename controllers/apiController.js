@@ -34,6 +34,6 @@ function dietFactory(food) {
         protein: food.protein,
         fat: food.fat,
         carbohydrates: food.carbohydrates,
-        createdAt: new Date().toLocaleString()
+        createdAt: new Date()
     }
 }
