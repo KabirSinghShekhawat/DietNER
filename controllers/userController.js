@@ -20,8 +20,12 @@ exports.userList = async (req, res) => {
     return res.render('users', {users})
 }
 
+exports.userListApi = async (req, res) => {
+    const users = await User.find({})
+    return res.status(200).send(users)
+}
+
 function emptyText(input) {
-    if(typeof input == 'undefined' || input == null)
-        return true
-    return false
+    return typeof input == 'undefined' || input == null;
+
 }

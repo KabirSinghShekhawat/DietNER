@@ -1,46 +1,20 @@
 <%- include('./partials/header') %>
 <body>
-    <%- include('./partials/nav') %>
-    <% for (let user of users) { %>
-        <div class="container">
-            <p class="mb-3">Name: <%- user.name %></p>
-            <div class="container">
-                <h3>Diet List</h3>
-                <% for (let food of user.diet) { %>
-                    <p class="mb-3">Food Name: <%- food.foodName %></p>
-                    <p class="mb-3">Calories: <%- food.calories %></p>
-                <% } %>
+<%- include('./partials/nav') %>
+<div class="container mt-5">
+    <div class="d-flex flex-row justify-content-around">
+        <% for (let user of users) { %>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/data/user.svg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><%- user.name %></h5>
+                    <p class="card-text">Some quick</p>
+                    <a href="/<%- user._id %>/diet" class="btn btn-primary">Diet</a>
+                </div>
             </div>
-        </div>
-    <% } %>
-    <table class="table table-striped table-hover">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-            </tr>
-        </tbody>
-    </table>
+        <% } %>
+    </div>
+</div>
 
-    <%- include('./partials/footer') %>
+
+<%- include('./partials/footer') %>

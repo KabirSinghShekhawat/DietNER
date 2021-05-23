@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const db = require('./db')
 const path = require('path')
 
@@ -15,6 +16,7 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
 // middleware
+app.use(cors())
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.urlencoded({ limit: '10kb', extended: true }))
 app.use(express.json({ limit: '10kb'}))

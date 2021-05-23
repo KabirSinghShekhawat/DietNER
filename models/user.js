@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema({
                 type: Number,
                 default: 0.00
             },
-            protien: {
+            protein: {
                 type: Number,
                 default: 0.00
             },

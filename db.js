@@ -11,6 +11,6 @@ exports.connectDatabase = () => {
             console.log('Connected To Database')
         })
         .catch(err => {
-            throw new Error('Error connecting:\n')
+            throw new Error('Error connecting:\n' + err.error)
         })
 }

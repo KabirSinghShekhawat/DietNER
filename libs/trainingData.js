@@ -42,8 +42,8 @@ function NER_learn(trainingData, foodText) {
 }
 
 async function cleanTokens(tokens) {
-    let foods = tokens.filter(data => data.entityType === 'NNS' || data.entityType === 'NN' || data.entityType === 'NNP')
-
+    // let foods = tokens.filter(data => data.entityType === 'NNS' || data.entityType === 'NN' || data.entityType === 'NNP')
+    let foods = tokens
     const foodNames = foods.map(data => { return { foodName: data.value } })
     const foodList = await Food.find({})
 
@@ -66,15 +66,14 @@ async function cleanTokens(tokens) {
 }
 
 async function readData(csv) {
-    const parsedCsv = await neatCsv(csv)
-    return parsedCsv
+    return neatCsv(csv);
 }
 
-function NER_Factory(csvData) {
+function NER_Factory({Word, POS, Tag}) {
     return {
-        text: csvData.Word,
-        entityType: csvData.POS,
-        uid: csvData.Tag
+        text: Word,
+        entityType: POS,
+        uid: Tag
     }
 }
 
