@@ -1,0 +1,1577 @@
+[
+    {
+        "text": "apple",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "mango",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "grapes",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "watermelon",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "plum",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pomegranate",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "banana",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "peach",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "fig",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dragon fruit",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pear",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "chikoo",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pineapple",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "orange",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "sweet lime",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "apricot",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "coconut",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "blackberry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cherry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "fig",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "kiwi",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "papaya",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "beetroot",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "carrot",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "radish",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "raspberry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cauliflower",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cabbage",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "capsicum",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "lady's finger",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "french beans",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cucumber",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "brinjal",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "onion",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "peas",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "potato",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "spinach",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "tomato",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "bottle gourd",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "bitter gourd",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "noodles",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "manchurian",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dumpling",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "chowmein",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "spring roll",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dim sum",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "fried rice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "hot pot",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "peking duck",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "fried shrimp",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "sweet and sour pork",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "kung pao chicken",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "tomato soup",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "corn soup",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "vegetable soup",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "onion soup",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "lentil soup",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "mushroom soup",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "broccoli soup",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cabbage soup",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "bean soup",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pumpkin soup",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "milk",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "curd",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "buttermilk",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "lassi",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "butter",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cheese",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "ice cream",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "yoghurt",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "condensed milk",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cottage cheese",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cream",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cream cheese",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "ghee",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "anchovy fry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "appam",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "apple juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "asian sesame chicken",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "sambar",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "avial",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "avocado juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "banana chips",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cabbage kootu",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cabbage salad with raisins",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "caprese salad",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "carrot salad",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "chicken 65",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "chicken curry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "coconut chutney",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cold asian noodle salad",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cranberry juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cucumber salad",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "egg salad",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "grape juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "greek salad",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "hyderabadi biryani",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "idli",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "kiwi juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "kuzhi paniyaram",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "lemon juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "lemon rice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "masala dosa",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "mixed salad greens",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "onion bhaji",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "puttu",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "kadala curry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "stew",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "orange juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "panzanella",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "parotta",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pineapple juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "plain dosa",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pomegranate juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "potato salad",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "puri",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "ragi dosa",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "rava dosa",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "seafood garden salad",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "shrimp garden salad",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "spicy potato fry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "spinach poriyal",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "sweet pongal",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "tomato chutney",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "tomato rice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "tuna fish salad",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "uttapam",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "vada",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "vegetable som tam salad",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "ven pongal",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "watermelon juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "watermelon,olive and feta salad",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "wheat dosa",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "white rice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "idiyappam",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "egg curry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "kerala beef fry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cassava Kerala fish curry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "payasam",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pulihora",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "punugulu",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "strawberry juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "banana juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "mango juice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "almonds",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pistachios",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "walnuts",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cashew",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pecans",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "macadamia nuts",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "brazil nuts",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "hazelnuts",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "peanuts",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "flaxseeds",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "chia seeds",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "hemp seeds",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "sesame seeds",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pumpkin seeds",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "sunflower seeds",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "chicken egg",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "quail egg",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "goose egg",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "duck egg",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "turkey egg",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "caviar",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pork",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "beef",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "mutton",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "chicken",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "turkey",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "duck",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "goose",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "oatmeal cookies",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "raisin cookies",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "chocolate chip cookie",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "peanut butter cookies",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "coconut cookies",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "snowball cookies",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "chocolate crinkle cookies",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "hazelnut macaroons",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "coconut macaroons",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "plain bagel",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "whole wheat bagel",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "blueberry bagel",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "asiago bagel",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "sesame bagel",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "egg bagel",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "blueberry muffin",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cinnamon roll",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pecan pie",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "apple pie",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "blueberry pie",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baked beans",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baked potatoes",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baked yogurt",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baked vegetables",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "croissant",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "potato scone",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "kolache",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cheddar cheese scones",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "carrot chips",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baked chickpeas",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baked cheeseballs",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baked zucchini chips",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baked zucchini cutlet",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baked tortilla chips",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "banana chips",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "rosemary crackers",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "kale chips",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "namak para",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baked ragi chakli",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baked eggs",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "blueberry cheesecake",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "lemon tart",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "chocolate tart",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "apple tart",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "waffle",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "fig biscotti",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "chocolate fudge muffins",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "butterscotch pastry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "oatmeal muffin",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dates and walnut muffin",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "palak paneer",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dal makhani",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "channa masala",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "malai kofta",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "kadhi",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "kadai mushroom",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "bhindi masala",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dal khichdi",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "masala khichdi",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "bhindi stir fry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dahi bhalla",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baingan bharta",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dum aloo",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "sarso ka saag",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "methi aloo",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "aloo gobi",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dal fry",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "paneer tikka",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dhokla",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pav bhaji",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "chole bhature",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "aloo tikki",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dal bhaat",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "aloo matar",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "bisi bele bhaat",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "aloo paratha",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "palak saag",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "rajma chawal",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "paneer lababdar",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "tawa paneer",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "curd rice",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "biryani",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "matar paneer",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pani puri",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "tawa mushroom",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dahi kebab",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "gobi",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "bread pakoda",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "mushroom tikka",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "vada pav",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "mixed vegetables",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "poha",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "upma",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "bottle gourd sabzi",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "beans",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dahi papdi chaat",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "dabeli",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "khakra",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "aloo puri",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "kachori",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "beans aloo",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "baguette",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "jalapeno breadsticks",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "challah",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "ciabatta",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "cornbread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "focaccia",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "multigrain bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pita bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "rye bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "white soda bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "sourdough",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "whole wheat bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "parmesan oregano bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "bammy",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "bloomer",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "tortilla",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "damper bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "bazlama",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "vanocka",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "banana bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "naan",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pretzels",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "ezekiel bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "gluten free bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "oatmeal bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "potato bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "italian bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "indian flatbread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "injera",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "matzo bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "panettone",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "popover",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "marraqueta",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "garlic bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pan cubano",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pai bao",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "sangak",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "gingerbread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "swedish limpa",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "simit",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "almond flax bread",
+        "entityType": "NNP",
+        "uid": "food"
+    },
+    {
+        "text": "pumpernickel",
+        "entityType": "NNP",
+        "uid": "food"
+    }
+]
