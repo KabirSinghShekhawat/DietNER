@@ -3,10 +3,11 @@ import Axios from "axios";
 import Nav from "./Nav";
 import FoodData from "./FoodData";
 import NewUser from "./NewUser";
+import Diet from "./Diet";
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
+    Route
 } from "react-router-dom";
 import UserList from "./UserList";
 
@@ -45,8 +46,11 @@ class App extends Component {
                     <Nav/>
                     <Switch>
                         <Route exact path="/user/all">
-                            <UserList />
+                            <UserList/>
                         </Route>
+                        <Route exact path="/diet/:id" render={(props) =>
+                            <Diet {...props} />}
+                        />
                         <Route exact path="/new_user">
                             <NewUser/>
                         </Route>
