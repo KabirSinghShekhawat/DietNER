@@ -9,6 +9,7 @@ class UserList extends Component {
             users: []
         }
         this.userList = this.userList.bind(this)
+        this.deleteUser = this.deleteUser.bind(this)
     }
 
     async componentDidMount() {
@@ -18,14 +19,19 @@ class UserList extends Component {
 
     userList() {
         const users = this.state.users
-        if(typeof users == 'undefined' || users.length === 0) return 'Loading...'
-
-        const cards = users.map((user) => {
+        if(typeof users == 'undefined') return 'Loading...'
+        if(users.length === 0) return 'No Users Found'
+        return users.map((user) => {
             return (
-                <User key={user._id} user={user} />
+                <User key={user._id} user={user} deleteUser={this.deleteUser} />
             )
         })
-        return cards
+    }
+
+    async deleteUser(id) {
+            await Axios.delete(`http://localhost:3000/user/list/${id}`)
+            const users = await Axios.get('http://localhost:3000/user/list')
+            this.setState({users: users.data})
     }
 
     render() {

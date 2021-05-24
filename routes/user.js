@@ -13,6 +13,7 @@ router.route('/list')
     .get(userController.userListApi)
 router.route('/list/:id')
     .get(userController.userDetails)
+    .delete(userController.deleteUser)
     router.route('/list/:user/diet/:id')
     .patch(userController.removeFood)
 

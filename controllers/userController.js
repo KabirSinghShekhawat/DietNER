@@ -13,6 +13,12 @@ exports.addUser = async (req, res) => {
     return res.status(201).redirect('/')
 }
 
+exports.deleteUser = async (req, res) => {
+    const {id} = req.params
+    await User.findByIdAndDelete(id)
+    res.status(200).send(`Deleted User with id: ${id}`)
+}
+
 exports.userList = async (req, res) => {
     const users = await User.find({})
     console.log('number of users: ' + users.length)
