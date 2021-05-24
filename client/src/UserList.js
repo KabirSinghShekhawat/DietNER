@@ -19,8 +19,7 @@ class UserList extends Component {
 
     userList() {
         const users = this.state.users
-        if(typeof users == 'undefined') return 'Loading...'
-        if(users.length === 0) return 'No Users Found'
+        if(typeof users == 'undefined' || users.length === 0) return 'Loading...'
         return users.map((user) => {
             return (
                 <User key={user._id} user={user} deleteUser={this.deleteUser} />
@@ -37,7 +36,7 @@ class UserList extends Component {
     render() {
         return (
             <div className="container mt-5">
-                <div className="d-md-flex flex-wrap flex-row justify-content-around">
+                <div className="d-flex flex-wrap flex-row justify-content-center">
                     {this.userList()}
                 </div>
             </div>

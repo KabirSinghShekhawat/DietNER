@@ -23,7 +23,6 @@ class Diet extends Component {
         await Axios.patch(`http://localhost:3000/user/list/${user}/diet/${id}`)
         const diet = await Axios.get(`http://localhost:3000/user/list/${user}`)
         this.setState({diet: diet.data[0]})
-
     };
 
     displayDiet() {
