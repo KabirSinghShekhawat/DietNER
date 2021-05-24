@@ -36,7 +36,7 @@ class FoodData extends Component {
 
     render() {
         return (
-            <div className="container my-5 ml-5">
+            <div className="container my-5">
                 <form onSubmit={this.handleSubmit}>
                     <div className="mb-3 form-group">
                         <label htmlFor="name" className="form-label">User's Name:</label>

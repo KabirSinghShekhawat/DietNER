@@ -14,8 +14,8 @@ class FoodItem extends Component {
         const food = this.props.food
         return (
             <div className="card mt-3 ml-3 flex-grow-1" style={{width: "18rem"}}>
-                <div className="card-body" key={food._id}>
-                    <h5 className="card-title">{food.foodName}</h5>
+                <div className="card-body bg-light">
+                    <h5 className="card-title text-capitalize">{food.foodName}</h5>
                     <hr />
                     <p className="card-text">Calories: {food.calories} kcal</p>
                     <p className="card-text">Protein: {food.protein} gm</p>

@@ -1,5 +1,5 @@
 const User = require('../models/user')
-const NER = require('../libs/trainingData')
+const NER = require('../libs/Winkner')
 
 exports.addFood = async (req, res) => {
     const { username, foodData } = req.body
