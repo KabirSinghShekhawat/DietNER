@@ -25,12 +25,12 @@ class App extends Component {
         })
             .then(function (response) {
                 //handle success
-                for (let food of response.data)
-                    console.log(food);
+                console.log(response.data)
+
             })
-            .catch(function (response) {
+            .catch(function (error) {
                 //handle error
-                console.log(response);
+                console.log(error.response);
             });
     }
 

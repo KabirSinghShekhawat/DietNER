@@ -5,11 +5,13 @@ class FoodData extends Component {
         super(props);
         this.state = {
             username: '',
-            foodData: ''
+            foodData: '',
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
+        this.validate = this.validate.bind(this)
     }
+
     handleSubmit(evt) {
         evt.preventDefault()
         const user = {
@@ -24,6 +26,14 @@ class FoodData extends Component {
         this.setState({[evt.target.name]: evt.target.value})
     }
 
+    validate() {
+        return (
+            <div className={this.state.isValid ? 'valid-feedback' : 'invalid-feedback'}>
+                {this.state.isValid ? 'Could not process data' : 'food data successfully processed'}
+            </div>
+        )
+    }
+
     render() {
         return (
             <div className="container my-5 ml-5">
@@ -36,7 +46,7 @@ class FoodData extends Component {
                                aria-describedby="name"
                                name="username"
                                value={this.state.username}
-                               onChange={this.handleChange} />
+                               onChange={this.handleChange}/>
                         <div id="nameHelp" className="form-text">Please enter user's name to add a food to diet.</div>
                     </div>
                     <div className="mb-3 form-group">
@@ -44,8 +54,7 @@ class FoodData extends Component {
                         <textarea className="form-control"
                                   value={this.state.foodData}
                                   onChange={this.handleChange}
-                                  id="food-text" name="foodData" rows="3"
-                        />
+                                  id="food-text" name="foodData" rows="3"/>
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
