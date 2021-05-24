@@ -1,33 +1,18 @@
 const ner = require('wink-ner')
 const myNER = ner()
-
-// const neatCsv = require('neat-csv')
-
 const path = require('path')
 const fs = require('fs')
-
 const Food = require('../models/food')
 
 exports.nerParser = async (foodText) => {
     let rawData = fs.readFileSync(path.join(__dirname, '../public/data/database.json'))
-    let data = await JSON.parse(rawData)
-    console.log(data)
-    const trainingData = data
+    const trainingData = await JSON.parse(rawData)
     let tokens = NER_learn(trainingData, foodText)
     tokens = myNER.recognize(tokens)
     console.log('tokens: ')
     console.log(tokens)
     return await cleanTokens(tokens)
 }
-
-// async function readCSVFile(filename) {
-//     const readStream = fs.createReadStream(filename, {encoding: 'utf8'})
-//     let fullStream = ''
-//     for await (const chunk of readStream) {
-//         fullStream += chunk
-//     }
-//     return fullStream
-// }
 
 function NER_learn(trainingData, foodText) {
     myNER.learn(trainingData)
@@ -37,12 +22,9 @@ function NER_learn(trainingData, foodText) {
 }
 
 async function cleanTokens(tokens) {
-    // let foods = tokens.filter(data => data.entityType === 'NNS' || data.entityType === 'NN' || data.entityType === 'NNP')
     let foods = tokens.filter(data => data.uid === 'food')
-    // let foods = tokens
     const foodNames = foods.map(data => { return { foodName: data.value } })
     const foodList = await Food.find({})
-
     let finalFoodList = []
 
     for (let food of foodNames) {

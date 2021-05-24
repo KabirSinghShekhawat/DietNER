@@ -13,14 +13,20 @@ class FoodItem extends Component {
     render() {
         const food = this.props.food
         return (
-            <li className="list-group-item" key={food._id}>
-                {food.foodName}
-                <button onClick={this.handleRemove}
-                        type="button"
-                        className="close" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </li>
+            <div className="card mt-3 ml-3 flex-grow-1" style={{width: "18rem"}}>
+                <div className="card-body" key={food._id}>
+                    <h5 className="card-title">{food.foodName}</h5>
+                    <hr />
+                    <p className="card-text">Calories: {food.calories} kcal</p>
+                    <p className="card-text">Protein: {food.protein} gm</p>
+                    <p className="card-text">Carbohydrates: {food.carbohydrates} gm</p>
+                    <p className="card-text">Fat: {food.fat} gm</p>
+                    <button onClick={this.handleRemove} type="button"
+                            className="btn btn-danger" aria-label="Delete">
+                        Delete
+                    </button>
+                </div>
+            </div>
         )
     }
 }

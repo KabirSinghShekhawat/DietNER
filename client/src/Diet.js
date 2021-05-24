@@ -31,9 +31,10 @@ class Diet extends Component {
         if (typeof diet == 'undefined') return 'loading...'
         if(diet.length === 0) return 'Add some food items'
         const dietList = diet.map((food) => {
-            return <FoodItem food={food} deleteItem={this.deleteItem}/>
+            return <FoodItem food={food} key={food._id} deleteItem={this.deleteItem}/>
         })
-        return <ul className="list-group"> {dietList} </ul>
+        // return <ul className="list-group"> {dietList} </ul>
+        return dietList
     }
 
     render() {
@@ -46,7 +47,12 @@ class Diet extends Component {
                 <div className="container-fluid mt-3">
                     {name}
                 </div>
-                <div className="container my-5">{this.displayDiet()}</div>
+                {/*<div className="container my-5">{this.displayDiet()}</div>*/}
+                <div className="container mt-5">
+                    <div className="d-md-flex flex-wrap flex-row justify-content-around">
+                        {this.displayDiet()}
+                    </div>
+                </div>
             </React.Fragment>
         )
     }
