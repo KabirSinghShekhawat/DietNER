@@ -15,8 +15,10 @@ class FoodItem extends Component {
         return (
             <li className="list-group-item" key={food._id}>
                 {food.foodName}
-                <button onClick={this.handleRemove}>
-                    &#10008;
+                <button onClick={this.handleRemove}
+                        type="button"
+                        className="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </li>
         )
