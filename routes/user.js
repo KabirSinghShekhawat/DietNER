@@ -11,5 +11,7 @@ router.route('/all')
 
 router.route('/list')
     .get(userController.userListApi)
+router.route('/list/:id')
+    .get(userController.userDetails)
 
 module.exports = router

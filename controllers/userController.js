@@ -24,6 +24,13 @@ exports.userListApi = async (req, res) => {
     const users = await User.find({})
     return res.status(200).send(users)
 }
+exports.userDetails = async (req, res) => {
+    const {id} = req.params
+    const user = await User.find({_id: id})
+    if(typeof user == 'undefined' || user == null)
+        return res.status(404).send('user not found!')
+    return res.status(200).send(user)
+}
 
 function emptyText(input) {
     return typeof input == 'undefined' || input == null;
