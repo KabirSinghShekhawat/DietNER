@@ -18,8 +18,7 @@ class UserList extends Component {
 
     userList() {
         const users = this.state.users
-        if(typeof users == 'undefined') return ''
-        if(users.length === 0) return ''
+        if(typeof users == 'undefined' || users.length === 0) return 'Loading...'
 
         const cards = users.map((user) => {
             return (
@@ -32,7 +31,7 @@ class UserList extends Component {
     render() {
         return (
             <div className="container mt-5">
-                <div className="d-flex flex-row justify-content-around">
+                <div className="d-md-flex flex-row justify-content-around">
                     {this.userList()}
                 </div>
             </div>
