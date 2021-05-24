@@ -32,6 +32,19 @@ exports.userDetails = async (req, res) => {
     return res.status(200).send(user)
 }
 
+exports.removeFood = async (req, res) => {
+    const {user: userId, id: foodId} = req.params
+    const user = await User.findById(userId)
+    const newDiet = user.diet.filter(diet => {
+        const food = String(diet._id)
+        console.log(`food: ${food}`)
+        return food !== foodId
+    })
+    console.log(`new Diet: ${newDiet}`)
+    await User.findByIdAndUpdate(userId, {diet: newDiet})
+    res.status(200).send({removed: foodId})
+}
+
 function emptyText(input) {
     return typeof input == 'undefined' || input == null;
 
