@@ -1,2 +1,2 @@
-# Thryve NER
+# DietNER
 # Named Entity Recognition 
