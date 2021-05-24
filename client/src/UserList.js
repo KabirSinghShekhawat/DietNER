@@ -35,7 +35,7 @@ class UserList extends Component {
 
     render() {
         return (
-            <div className="container mt-5">
+            <div className="container">
                 <div className="d-flex flex-wrap flex-row justify-content-center">
                     {this.userList()}
                 </div>

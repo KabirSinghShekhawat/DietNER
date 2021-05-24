@@ -38,7 +38,7 @@ class Diet extends Component {
         const diet = this.state.diet
         const name = (typeof diet.name == 'undefined' || diet.name.length === 0)
             ? '' :
-            <h3 className="text-lg-center">{this.state.diet.name}'s Diet Plan</h3>
+            <h3 className="text-lg-center text-capitalize">{this.state.diet.name}'s Diet Plan</h3>
         return (
             <React.Fragment>
                 <div className="container-fluid mt-3">
