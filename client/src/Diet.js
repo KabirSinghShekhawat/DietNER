@@ -57,10 +57,10 @@ class Diet extends Component {
 
         return Object.keys(nutritionalInfo).map((key, index) => {
             return (
-                <tr>
+                <tr key={index}>
                     <th scope="row">{index + 1}</th>
                     <td className="text-capitalize">{key}</td>
-                    <td>{nutritionalInfo[key].toFixed(2)} {key === 'calories' ? 'kcal' : 'gm'}</td>
+                    <td>{nutritionalInfo[key].toFixed(2)}{key === 'calories' ? ' kcal' : ' gm'}</td>
                 </tr>
             )
         })
@@ -69,29 +69,28 @@ class Diet extends Component {
     render() {
         const diet = this.state.diet
         const name = (typeof diet.name == 'undefined' || diet.name.length === 0)
-            ? '' :
-            <h3 className="text-lg-center text-capitalize">{this.state.diet.name}'s Diet Plan</h3>
+            ? '' : <h3 className="text-lg-center text-capitalize">{diet.name}'s Diet Plan</h3>
+        const tableHead =
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nutrient</th>
+                <th scope="col">Value</th>
+            </tr>
+        let nutritionalTable = this.totalNutritionalInfo()
+        let currentDiet = this.displayDiet()
         return (
             <React.Fragment>
                 <div className="container-fluid mt-4">{name}</div>
                 <div className="container mt-4">
                     <table className="table">
-                        <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nutrient</th>
-                            <th scope="col">Value</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {this.totalNutritionalInfo()}
-                        </tbody>
+                        <thead>{tableHead}</thead>
+                        <tbody>{nutritionalTable}</tbody>
                     </table>
                 </div>
                 <div className="container mt-5 mb-4">
                     <hr/>
                     <div className="d-md-flex flex-wrap flex-row justify-content-around">
-                        {this.displayDiet()}
+                        {currentDiet}
                     </div>
                 </div>
             </React.Fragment>
