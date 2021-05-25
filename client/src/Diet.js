@@ -9,6 +9,7 @@ class Diet extends Component {
             diet: {},
         }
         this.displayDiet = this.displayDiet.bind(this)
+        this.totalNutritionalInfo = this.totalNutritionalInfo.bind(this)
         this.deleteItem = this.deleteItem.bind(this)
     }
 
@@ -28,9 +29,40 @@ class Diet extends Component {
     displayDiet() {
         const diet = this.state.diet.diet
         if (typeof diet == 'undefined') return 'loading...'
-        if(diet.length === 0) return 'Add some food items'
+        if (diet.length === 0) return 'Add some food items'
         return diet.map((food) => {
             return <FoodItem food={food} key={food._id} deleteItem={this.deleteItem}/>
+        })
+    }
+
+    totalNutritionalInfo() {
+        const diet = this.state.diet.diet
+        if (typeof diet == 'undefined') return 'loading...'
+        if (diet.length === 0) return 'Add some food items'
+
+        const nutritionalInfo = {
+            calories: diet.reduce((total, food) => {
+                return total + food.calories
+            }, 0),
+            protein: diet.reduce((total, food) => {
+                return total + food.protein
+            }, 0),
+            fat: diet.reduce((total, food) => {
+                return total + food.fat
+            }, 0),
+            carbohydrates: diet.reduce((total, food) => {
+                return total + food.carbohydrates
+            }, 0)
+        }
+
+        return Object.keys(nutritionalInfo).map((key, index) => {
+            return (
+                <tr>
+                    <th scope="row">{index + 1}</th>
+                    <td className="text-capitalize">{key}</td>
+                    <td>{nutritionalInfo[key].toFixed(2)} {key === 'calories' ? 'kcal' : 'gm'}</td>
+                </tr>
+            )
         })
     }
 
@@ -41,10 +73,23 @@ class Diet extends Component {
             <h3 className="text-lg-center text-capitalize">{this.state.diet.name}'s Diet Plan</h3>
         return (
             <React.Fragment>
-                <div className="container-fluid mt-3">
-                    {name}
+                <div className="container-fluid mt-4">{name}</div>
+                <div className="container mt-4">
+                    <table className="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nutrient</th>
+                            <th scope="col">Value</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {this.totalNutritionalInfo()}
+                        </tbody>
+                    </table>
                 </div>
-                <div className="container mt-5">
+                <div className="container mt-5 mb-4">
+                    <hr/>
                     <div className="d-md-flex flex-wrap flex-row justify-content-around">
                         {this.displayDiet()}
                     </div>
