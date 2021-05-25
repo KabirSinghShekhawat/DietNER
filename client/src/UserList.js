@@ -34,10 +34,11 @@ class UserList extends Component {
     }
 
     render() {
+        const userList = this.userList()
         return (
             <div className="container">
                 <div className="d-flex flex-wrap flex-row justify-content-center">
-                    {this.userList()}
+                    {userList}
                 </div>
             </div>
         )
