@@ -38,7 +38,7 @@ class Diet extends Component {
     totalNutritionalInfo() {
         const diet = this.state.diet.diet
         if (typeof diet == 'undefined') return 'loading...'
-        if (diet.length === 0) return 'Add some food items'
+        if (diet.length === 0) return ''
 
         const nutritionalInfo = {
             calories: diet.reduce((total, food) => {
@@ -55,7 +55,7 @@ class Diet extends Component {
             }, 0)
         }
 
-        return Object.keys(nutritionalInfo).map((key, index) => {
+        const nutritionRows = Object.keys(nutritionalInfo).map((key, index) => {
             return (
                 <tr key={index}>
                     <th scope="row">{index + 1}</th>
@@ -64,28 +64,34 @@ class Diet extends Component {
                 </tr>
             )
         })
-    }
 
-    render() {
-        const diet = this.state.diet
-        const name = (typeof diet.name == 'undefined' || diet.name.length === 0)
-            ? '' : <h3 className="text-lg-center text-capitalize">{diet.name}'s Diet Plan</h3>
         const tableHead =
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Nutrient</th>
                 <th scope="col">Value</th>
             </tr>
+
+        return (
+            <table className="table">
+                <thead>{tableHead}</thead>
+                <tbody>{nutritionRows}</tbody>
+            </table>
+        )
+    }
+
+    render() {
+        const diet = this.state.diet
+        const name = (typeof diet.name == 'undefined' || diet.name.length === 0)
+            ? '' : <h3 className="text-lg-center text-capitalize">{diet.name}'s Diet Plan</h3>
+        
         let nutritionalTable = this.totalNutritionalInfo()
         let currentDiet = this.displayDiet()
         return (
             <React.Fragment>
                 <div className="container-fluid mt-4">{name}</div>
                 <div className="container mt-4">
-                    <table className="table">
-                        <thead>{tableHead}</thead>
-                        <tbody>{nutritionalTable}</tbody>
-                    </table>
+                    {nutritionalTable}
                 </div>
                 <div className="container mt-5 mb-4">
                     <hr/>
