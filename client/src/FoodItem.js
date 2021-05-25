@@ -44,6 +44,7 @@ function FoodInfo(props) {
             </p>
         )
     })
+    
     return (
         <React.Fragment>
             <h5 className="card-title text-capitalize">{food.foodName}</h5>
