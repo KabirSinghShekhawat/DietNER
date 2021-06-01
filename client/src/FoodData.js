@@ -9,7 +9,6 @@ class FoodData extends Component {
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
-        this.validate = this.validate.bind(this)
     }
 
     handleSubmit(evt) {

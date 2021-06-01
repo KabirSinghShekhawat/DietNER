@@ -18,7 +18,7 @@ class NewUser extends Component {
         })
             .then(function (response) {
                 //handle success
-                console.log(response.data)
+                console.log('ok')
 
             })
             .catch(function (error) {
