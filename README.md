@@ -1,7 +1,7 @@
 # DietNER
 # Named Entity Recognition 
 # Home
-![Home] (../master/Showcase/home.jpg)
+![Home] (../master/Showcase/home.jpeg)
 # Users
 (../master/Showcase/users.jpg)
 # Diet Plan
