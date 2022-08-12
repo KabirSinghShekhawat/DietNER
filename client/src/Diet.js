@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import FoodItem from "./FoodItem";
+import config from "./config"
 
 class Diet extends Component {
     constructor(props) {
@@ -15,14 +16,14 @@ class Diet extends Component {
 
     async componentDidMount() {
         const id = this.props.match.params.id
-        const diet = await Axios.get(`http://localhost:3000/user/list/${id}`)
+        const diet = await Axios.get(`${config.HOST}/user/list/${id}`)
         this.setState({ diet: diet.data[0] })
     }
 
     async deleteItem(id) {
         const user = this.props.match.params.id
-        await Axios.patch(`http://localhost:3000/user/list/${user}/diet/${id}`)
-        const diet = await Axios.get(`http://localhost:3000/user/list/${user}`)
+        await Axios.patch(`${config.HOST}/user/list/${user}/diet/${id}`)
+        const diet = await Axios.get(`${config.HOST}/user/list/${user}`)
         this.setState({ diet: diet.data[0] })
     };
 

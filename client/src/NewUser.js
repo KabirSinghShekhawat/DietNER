@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Axios from "axios";
+import config from "./config";
 
 class NewUser extends Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class NewUser extends Component {
 
     async handleSubmit(evt) {
         evt.preventDefault()
-        await Axios.post(`http://localhost:3000/user`, {
+        await Axios.post(`${config.HOST}/user`, {
             name: this.state.name
         })
             .then(function (response) {

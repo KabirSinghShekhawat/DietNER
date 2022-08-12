@@ -10,6 +10,7 @@ import {
     Route
 } from "react-router-dom";
 import UserList from "./UserList";
+import config from "./config";
 
 class App extends Component {
     constructor(props) {
@@ -19,7 +20,7 @@ class App extends Component {
 
     addFood(user) {
         const {username, foodData} = user
-        Axios.post('http://localhost:3000/api/ner', {
+        Axios.post(`${config.HOST}/api/ner`, {
             username: username,
             foodData: foodData
         })

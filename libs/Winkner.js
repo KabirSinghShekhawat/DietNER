@@ -25,7 +25,7 @@ async function cleanTokens(tokens) {
     let foods = tokens.filter(data => data.uid === 'food')
     const foodNames = foods.map(data => { return { foodName: data.value } })
     const foodList = await Food.find({})
-    
+
     let finalFoodList = []
 
     for (let food of foodNames) {

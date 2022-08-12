@@ -14,7 +14,8 @@ router.route('/list')
 router.route('/list/:id')
     .get(userController.userDetails)
     .delete(userController.deleteUser)
-    router.route('/list/:user/diet/:id')
+
+router.route('/list/:user/diet/:id')
     .patch(userController.removeFood)
 
 module.exports = router

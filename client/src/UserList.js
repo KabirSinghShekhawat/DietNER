@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Axios from "axios";
 import User from "./User";
+import config from "./config";
 
 class UserList extends Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class UserList extends Component {
     }
 
     async componentDidMount() {
-        const users = await Axios.get('http://localhost:3000/user/list')
+        const users = await Axios.get(`${config.HOST}/user/list`)
         this.setState({users: users.data})
     }
 
@@ -28,8 +29,8 @@ class UserList extends Component {
     }
 
     async deleteUser(id) {
-            await Axios.delete(`http://localhost:3000/user/list/${id}`)
-            const users = await Axios.get('http://localhost:3000/user/list')
+            await Axios.delete(`${config.HOST}/user/list/${id}`)
+            const users = await Axios.get(`${config.HOST}/user/list`)
             this.setState({users: users.data})
     }
 

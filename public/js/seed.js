@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 mongoose.connect("mongodb://localhost/nlpDemo", {useNewUrlParser: true, useUnifiedTopology: true});
 
-const Food = require("./models/food");
+const Food = require("../../models/food");
 // var Profile = require("./models/profile");
 // var Exercise = require("./models/exercise");
 
@@ -11,13 +11,14 @@ Food.remove({}, function(err){
     }
     console.log("removed all");
     const fs1 = require("fs");
-    fs1.exists('foods.json', function(exists){
+    const food_file_path = '../data/foods.json'
+    fs1.exists(food_file_path, function(exists){
         if(exists){
             var obj = {
                 table:[]
             };
-            
-            fs1.readFile('foods.json','utf8', function(err,data){
+
+            fs1.readFile(food_file_path,'utf8', function(err,data){
                 obj = JSON.parse(data);
                 //console.log(obj.table);
                 obj.table.forEach(function(food){
@@ -34,9 +35,9 @@ Food.remove({}, function(err){
             });
         }
         else{
-            console.log("error");  
-        } 
-    });   
+            console.log("error");
+        }
+    });
 });
 
 // Exercise.remove({}, function(err){
@@ -50,7 +51,7 @@ Food.remove({}, function(err){
 //             var obj = {
 //                 table:[]
 //             };
-            
+
 //             fs1.readFile('exercises.json','utf8', function(err,data){
 //                 obj = JSON.parse(data);
 //                 // console.log(obj.table);
@@ -68,9 +69,9 @@ Food.remove({}, function(err){
 //             });
 //         }
 //         else{
-//             console.log("error");  
-//         } 
-//     });   
+//             console.log("error");
+//         }
+//     });
 // });
 
 // const fs1 = require("fs");
@@ -79,7 +80,7 @@ Food.remove({}, function(err){
 //         var obj = {
 //             table:[]
 //         };
-        
+
 //         fs1.readFile('food3.json','utf8', function(err,data){
 //             obj = JSON.parse(data);
 //             // console.log(obj.table);
@@ -93,9 +94,9 @@ Food.remove({}, function(err){
 //         });
 //     }
 //     else{
-//         console.log("error");  
-//     } 
-// });   
+//         console.log("error");
+//     }
+// });
 
 // const fs = require("fs");
 // fs.exists('food1.json', function(exists){
@@ -103,7 +104,7 @@ Food.remove({}, function(err){
 //         var src = {
 //             table:[]
 //         };
-        
+
 //         var des = {
 //             table:[]
 //         };
@@ -111,7 +112,7 @@ Food.remove({}, function(err){
 //         var res = {
 //             table:[]
 //         };
-        
+
 //         fs.readFile('food1.json','utf8', function(err,desdata){
 //             des = JSON.parse(desdata);
 //             console.log(des.table.length);
