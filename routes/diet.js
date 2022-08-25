@@ -3,7 +3,9 @@ const router = express.Router()
 const dietController = require('../controllers/dietController')
 
 
-router.route('/')
-.post(dietController.addFood)
+router
+    .route('/')
+    .get(dietController.recommendDiet)
+    .post(dietController.addFood)
 
 module.exports = router
